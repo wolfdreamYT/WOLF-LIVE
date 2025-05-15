@@ -2,7 +2,6 @@ const http = require('http');
 const { parse } = require('querystring');
 const port = process.env.PORT || 3000;
 
-// In-memory database
 let users = [
   { id: 1, user: 'wolf', code: '1234', key: 'sec1' }
 ];
@@ -94,3 +93,4 @@ http.createServer((req, res) => {
 }).listen(port, '0.0.0.0', () => {
   console.log(`Server started on http://localhost:${port}`);
 });
+
